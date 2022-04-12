@@ -63,11 +63,13 @@ footer{
 ul{
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-image: linear-gradient(to left, red 30%, black 70%);
+    
 }
 li{
     color: white;
     list-style-type: none;
+    text-decoration: none;
     margin: 2px 2px 2px 200px;
     padding: 10px;
 }
@@ -87,6 +89,45 @@ footer{
     position: sticky;
     bottom: 0;
 }
+
+.menuanimado{
+    animation-name: menu;
+    animation-duration: 2s;
+}
+
+
+@keyframes menu{
+from{
+    transform: translateX(-700px);
+}
+
+to{
+    transform: translateX(0);
+}
+}
+
+.footeranimado{
+    animation-name: pieanimado;
+    animation-duration: 1s;
+}
+
+
+@keyframes pieanimado{
+    from{
+        transform: translateY(-1000px);
+
+    }
+    to{
+        transform: translateY(0);
+
+    }
+}
+
+
+
+
+
+
 }
 
 
@@ -96,7 +137,8 @@ footer{
 
 
 /*TABLET*/
-@media (min-width: 769px) and (max-width:1024px){
+@media (min-width: 769px) and (max-width:1024px)
+   {
     #grids{
         display: grid;
         grid-template-areas: 
@@ -105,11 +147,16 @@ footer{
         "sec1"
         "sec2"
         "pie";
+        grid-template-rows: 2fr 1fr 3fr 3fr 0.5fr;
     }
+    
 
+    
 /*ESTILOS*/
 .imgsec1{
     width: 50%;
+    display: flex;
+    flex-flow: row wrap;
     
 }
 .imghead{
@@ -238,3 +285,284 @@ footer{
 
 }
 
+
+/*****************ACCESORIOS*****************/
+
+
+/*SMARTPHONE*/
+@media(max-width:768px)
+{
+
+    #gridAccesorios{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "men"
+        "sec1"
+        " pie"
+        ;
+        
+    }
+    
+    
+    
+    
+    
+header{
+        grid-area: cabeza;
+        
+    }
+#sec1{
+        grid-area: sec1;
+    display: flex;
+    flex-wrap:wrap;
+ }
+    
+
+
+nav{
+    grid-area: men;
+}
+
+}
+footer{
+    grid-area: pie;
+}
+
+
+/*ESTILOS*/
+.imgsec1{
+    width: 50%;
+    
+}
+.imghead{
+    width: 100%;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+li{
+    color: white;
+    list-style-type: none;
+    margin: 2px 2px 2px 200px;
+    padding: 10px;
+}
+li:hover{
+    border: solid white 1px;
+}
+.posicion{
+    position: absolute;
+    left: 95%
+}
+.posicion1{
+    position: absolute;
+    left: 90%;
+}
+footer{
+    background-color: rgba(199, 0, 0, 0.932);
+    position: sticky;
+    bottom: 0;
+}
+.imgacc{
+ margin: 10px;
+ padding: 10px;
+ width: 30%;
+ height: 300px;
+}
+.seccionacc{
+  background-image: linear-gradient(black, red)
+}
+}
+
+
+
+
+
+
+
+/*TABLET*/
+@media (min-width: 769px) and (max-width:1024px)
+
+{
+    
+ #gridAccesorios{
+    display: grid;
+    grid-template-areas: 
+    "cabeza"
+    "men"
+    "sec1"
+    "pie"
+    ;
+ }
+    
+
+
+
+
+
+
+header{
+    grid-area: cabeza;
+    
+}
+#sec1{
+    grid-area: sec1;
+display: flex;
+flex-wrap:wrap;
+
+}
+
+nav{
+grid-area: men;
+}
+
+
+footer{
+grid-area: pie;
+}
+
+
+/*ESTILOS*/
+.imgsec1{
+width: 50%;
+
+}
+.imghead{
+width: 100%;
+}
+ul{
+display: flex;
+flex-direction: row;
+background-color: black;
+}
+li{
+color: white;
+list-style-type: none;
+margin: 2px 2px 2px 200px;
+padding: 10px;
+}
+li:hover{
+border: solid white 1px;
+}
+.posicion{
+position: absolute;
+left: 95%
+}
+.posicion1{
+position: absolute;
+left: 90%;
+}
+footer{
+background-color: rgba(199, 0, 0, 0.932);
+position: sticky;
+bottom: 0;
+}
+.imgacc{
+ margin: 10px;
+ padding: 10px;
+ width: 30%;
+ height: 300px;
+}
+.seccionacc{
+  background-color: black;
+}
+
+} 
+
+
+
+
+
+/*DESKTOP*/ 
+@media (min-width: 1025px)
+{
+
+    
+    
+    #gridAccesorios{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "men"
+        "sec1"
+        
+        "pie"
+        ;
+       
+    }
+    
+    
+    
+    
+    
+    header{
+        grid-area: cabeza;
+        
+    }
+    #sec1{
+        grid-area: sec1;
+        display: flex;
+        flex-wrap:wrap;
+    
+     }
+     
+}
+nav{
+    grid-area: men;
+ }
+ 
+}
+footer{
+ grid-area: pie;
+}
+
+
+/*ESTILOS*/
+.imgsec1{
+ width: 50%;
+ 
+}
+.imghead{
+    width: 100%;
+ }
+ ul{
+     display: flex;
+     flex-direction: row;
+     background-color: black;
+ }
+ li{
+    color: white;
+    list-style-type: none;
+    margin: 2px 2px 2px 150px;
+    padding: 10px;
+    text-decoration: none;
+}
+li:hover{
+    border: solid white 1px;
+}
+.posicion{
+    position: absolute;
+    left: 95%
+}
+.posicion1{
+    position: absolute;
+    left: 90%;
+}
+footer{
+    background-color: rgba(199, 0, 0, 0.932);
+    position: sticky;
+    bottom: 0;
+}
+.imgacc{
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    height: 300px;
+ }
+ .seccionacc{
+     background-color: black;
+ }
+    
+}
