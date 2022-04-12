@@ -46,7 +46,7 @@ nav{
     grid-area: men;
 }
 
-}
+
 footer{
     grid-area: pie;
 }
@@ -190,6 +190,38 @@ footer{
     position: sticky;
     bottom: 0;
 }
+.menuanimado{
+    animation-name: menu;
+    animation-duration: 2s;
+}
+
+
+@keyframes menu{
+from{
+    transform: translateX(-700px);
+}
+
+to{
+    transform: translateX(0);
+}
+}
+
+.footeranimado{
+    animation-name: pieanimado;
+    animation-duration: 1s;
+}
+
+
+@keyframes pieanimado{
+    from{
+        transform: translateY(-1000px);
+
+    }
+    to{
+        transform: translateY(0);
+
+    }
+}
 }
 
     
@@ -240,7 +272,7 @@ nav{
     grid-area: men;
 }
 
-}
+
 footer{
     grid-area: pie;
 }
@@ -281,6 +313,38 @@ footer{
     background-color: rgba(199, 0, 0, 0.932);
     position: sticky;
     bottom: 0;
+}
+.menuanimado{
+    animation-name: menu;
+    animation-duration: 2s;
+}
+
+
+@keyframes menu{
+from{
+    transform: translateX(-700px);
+}
+
+to{
+    transform: translateX(0);
+}
+}
+
+.footeranimado{
+    animation-name: pieanimado;
+    animation-duration: 1s;
+}
+
+
+@keyframes pieanimado{
+    from{
+        transform: translateY(-1000px);
+
+    }
+    to{
+        transform: translateY(0);
+
+    }
 }
 
 }
@@ -324,7 +388,7 @@ nav{
     grid-area: men;
 }
 
-}
+
 footer{
     grid-area: pie;
 }
@@ -466,8 +530,8 @@ bottom: 0;
  height: 300px;
 }
 .seccionacc{
-  background-color: black;
-}
+    background-image: linear-gradient(black, red)
+  }
 
 } 
 
@@ -508,12 +572,12 @@ bottom: 0;
     
      }
      
-}
+
 nav{
     grid-area: men;
  }
  
-}
+
 footer{
  grid-area: pie;
 }
@@ -562,7 +626,7 @@ footer{
     height: 300px;
  }
  .seccionacc{
-     background-color: black;
- }
+    background-image: linear-gradient(black, red)
+  }
     
 }
